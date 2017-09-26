@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8">
+   <title>Заявка на участвие в конкурсе &mdash; Приложение для редактирования фотографий &laquo;Pink&raquo;</title>
+  </head>
+
+  <body>
+
+    <header class="page-header">
+      <a class="page-header__logo-link">
+        <img class="page-header__logo-image" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип приложения &laquo;Pink&raquo;">
+      </a>
+
+      <!-- Displays button to toggle main-navigation on mobile devices -->
+      <button class="page-header__toggle" type="button">Открыть меню</button>
+
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Фотография</a></li>
+          <li class="main-nav__item main-nav__item--active"><a>Конкурс</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page-content page-content--form">
+      <section class="intro">
+        <div class="intro__wrapper">
+          <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div> <!-- end .intro__wrapper -->
+      </section> <!-- end .intro -->
+
+      <section class="contest">
+        <h2 class="visually-hidden">Форма для участвия в конкурсе</h2>
+
+        <div class="contest__wrapper">
+          <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз &mdash; 1000 миль на вашу бонусную карту!</p>
+        </div> <!-- end .contest__wrapper -->
+
+        <form class="contest__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="contest__form-group">
+            <div class="contest__wrapper">
+              <ul class="contest__list">
+                <li class="contest__item">
+                  <label class="contest__label" for="lastName">Фамилия:</label>
+                  <input class="contest__input" id="lastName" name="last-name" type="text" placeholder="Укажите фамилию *" required>
+                </li>
+
+                <li class="contest__item">
+                  <label class="contest__label" for="firstName">Имя:</label>
+                  <input class="contest__input" id="firstName" name="first-name" type="text" placeholder="Введите ваше имя *" required>
+                </li>
+
+                <li class="contest__item">
+                  <label class="contest__label" for="middleName">Отчество:</label>
+                  <input class="contest__input" id="middleName" name="middle-name" type="text" placeholder="Ну и отчество тоже">
+                </li>
+              </ul>
+            </div> <!-- end .contest__wrapper -->
+          </fieldset> <!-- end contest__form-group -->
+
+          <fieldset class="contest__form-group">
+            <legend class="contest__title">Ваши безбашенные достижения в путешествии</legend>
+
+            <div class="contest__wrapper">
+              <ul class="contest__list">
+                <li class="contest__item">
+                  <input class="contest__input" id="selfieWithShark" name="achievement" value="selfie-with-shark" type="checkbox" checked>
+                  <label class="contest__label" for="selfieWithShark">Сделал селфи с акулой</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="skinBurn" name="achievement" value="skin-burn" type="checkbox" checked>
+                  <label class="contest__label" for="skinBurn">Обгорел на пляже</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="seeChuckNorris" name="achievement" value="see-chuck-norris" type="checkbox">
+                  <label class="contest__label" for="seeChuckNorris">Видел Чака Норриса</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="buySouvenir" name="achievement" value="buy-souvenir" type="checkbox">
+                  <label class="contest__label" for="buySouvenir">Накупил сувениров</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="holdTower" name="achievement" value="hold-tower" type="checkbox" checked>
+                  <label class="contest__label" for="holdTower">Удержал башню</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="crushHotel" name="achievement" value="crush-hotel" type="checkbox">
+                  <label class="contest__label" for="crushHotel">Разгромил отель</label>
+                </li>
+              </ul>
+            </div> <!-- end .contest__wrapper -->
+          </fieldset> <!-- end contest__form-group -->
+
+          <fieldset class="contest__form-group">
+            <div class="contest__wrapper">
+              <ul class="contest__list">
+                <li class="contest__item">
+                  <label class="contest__label" for="phone">Номер телефона:</label>
+                  <input class="contest__input" id="phone" name="phone" type="tel" placeholder="Номер, пожалуйста">
+                </li>
+
+                <li class="contest__item">
+                  <label class="contest__label" for="email">Адрес почты:</label>
+                  <input class="contest__input" id="email" name="email" type="email" placeholder="Введите почту *" required>
+                </li>
+              </ul>
+            </div> <!-- end .contest__wrapper -->
+          </fieldset> <!-- end contest__form-group -->
+
+          <fieldset class="contest__form-group">
+            <legend class="contest__title">С каким приложением путешествовали?</legend>
+
+            <div class="contest__wrapper">
+              <ul class="contest__list">
+                <li class="contest__item">
+                  <input class="contest__input" id="ios" name="device" value="ios" type="radio" checked>
+                  <label class="contest__label" for="ios">Pink для iOS</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="android" name="device" value="android" type="radio">
+                  <label class="contest__label" for="android">Pink на Android</label>
+                </li>
+
+                <li class="contest__item">
+                  <input class="contest__input" id="windowsPhone" name="device" value="windows-phone" type="checkbox">
+                  <label class="contest__label" for="windowsPhone">Windows Phone</label>
+                </li>
+              </ul>
+            </div> <!-- end .contest__wrapper -->
+          </fieldset> <!-- end contest__form-group -->
+
+            <fieldset class="contest__form-group">
+              <legend class="contest__title">Опишите свои эмоции</legend>
+
+              <div class="contest__wrapper">
+                <ul class="contest__list">
+                  <li class="contest__item">
+                    <textarea class="contest__textarea" name="comment" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях" title="Опишите свои эмоции"></textarea>
+                  </li>
+                </ul>
+              </div> <!-- end .contest__wrapper -->
+          </fieldset> <!-- end contest__form-group -->
+
+          <button type="submit">Отправить форму</button>
+          <p class="contest__note">* &ndash; Обязательные поля</p>
+        </form>
+      </section> <!-- end .contest -->
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <a class="page-footer__logo">
+          <img src="https://placehold.it/147x40" width="147" height="40" alt="Логотип приложения &laquo;Pink&raquo;">
+        </a>
+
+        <ul class="social">
+          <li class="social__item social__item--tw"><a href="#" target="_blank" rel="noreferrer nofollow">Twitter</a></li>
+          <li class="social__item social__item--fb"><a href="#" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
+          <li class="social__item social__item--yt"><a href="#" target="_blank" rel="noreferrer nofollow">Youtube</a></li>
+        </ul>
+
+        <p class="page-footer__developed-by">
+          Разработано
+          <a class="page-footer__developed-by-link" href="#" rel="noreferrer nofollow" target="_blank">
+            <img class="page-footer__developed-by-image" src="https://placehold.it/27x34" width="27" height="34" alt="Логотип &laquo;HTML Academy&raquo;">
+          </a>
+        </p>
+      </div> <!-- end page-footer__wrapper -->
+    </footer>
+
+    <section class="pop-up pop-up--error">
+      <h2 class="visually-hidden">Ошибка при отправлении формы</h2>
+
+      <div class="pop-up__wrapper">
+        <p class="pop-up__title">Что-то пошло не так!</p>
+        <p class="pop-up__message">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="pop-up__btn btn" type="button">ok</button>
+      </div> <!-- end .pop-up__wrapper -->
+    </section> <!-- end .pop-up--error -->
+
+    <section class="pop-up pop-up--success">
+      <h2 class="visually-hidden">Форма отправлена успешно</h2>
+
+      <div class="pop-up__wrapper">
+        <p class="pop-up__title">Ваша заявка отправлена</p>
+        <p class="pop-up__message">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+        <button class="pop-up__btn btn" type="button">Закрыть окно</button>
+      </div> <!-- end .pop-up__wrapper -->
+    </section> <!-- end .pop-up--success -->
+
+  </body>
+</html>

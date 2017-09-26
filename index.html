@@ -2,11 +2,247 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Главная &mdash; Приложение для редактирования фотографий &laquo;Pink&raquo;</title>
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+  <header class="page-header">
+    <a class="page-header__logo-link">
+      <img class="page-header__logo-image" src="https://placehold.it/75x22" width="75" height="22" alt="Логотип приложения &laquo;Pink&raquo;">
+    </a>
+
+    <!-- Displays button to toggle main-navigation on mobile devices -->
+    <button class="page-header__toggle" type="button">Открыть меню</button>
+
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Фотография</a></li>
+        <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+        <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML Academy</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-content page-content--index">
+    <h1 class="visually-hidden">Модное приложение для редактирования фотографий &laquo;Pink&raquo;</h1>
+
+    <section class="promo">
+      <h2 class="visually-hidden">Скачать приложение</h2>
+
+      <div class="promo__wrapper">
+        <div class="download-app">
+          <a href="#" class="download-app__btn btn">Скачать приложение</a>
+
+          <ul class="download-app__list">
+            <li class="download-app__item download-app__item--apple">Apple</li>
+            <li class="download-app__item download-app__item--android">Android</li>
+            <li class="download-app__item download-app__item--windows-phone">Windows Phone</li>
+          </ul>
+
+          <p class="donwload-app__support">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div> <!-- end .download-app -->
+      </div> <!-- end .hero__wrapper -->
+    </section> <!-- end .hero -->
+
+    <section class="features">
+      <h2 class="visually-hidden">Особенности приложения</h2>
+
+      <div class="features__title">
+        <p class="features__advertise">Устали от серости мегаполиса?</p>
+        <p class="features__advertise">Нам есть, что вам предложить!</p>
+      </div> <!-- end .features__title -->
+
+      <div class="features__wrapper">
+        <ul class="features__list">
+          <li class="features__item features__item--mood">
+            <h3 class="features__heading">Поднимает настроение</h3>
+            <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </li>
+
+          <li class="features__item features__item--world">
+            <h3 class="features__heading">Меняет мир вокруг</h3>
+            <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </li>
+
+          <li class="features__item features__item--friends">
+            <h3 class="features__heading">Заводит новых друзей</h3>
+            <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </li>
+        </ul>
+      </div> <!-- end .features__wrapper -->
+    </section> <!-- end .features -->
+
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы</h2>
+
+      <div class="reviews__wrapper slider">
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+        </blockquote>
+
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+        </blockquote>
+
+        <blockquote class="reviews__item slider__item">
+          <cite class="reviews__author-name">Николай Петров</cite>
+          <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+        </blockquote>
+
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+      </div> <!-- end .review__wrapper -->
+
+      <div class="reviews__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </div> <!-- end review__toggles.slider__toggles -->
+    </section> <!-- end .reviews -->
+
+    <section class="price">
+      <h2 class="visually-hidden">Цены</h2>
+
+      <div class="price__wrapper">
+        <table class="price__table">
+          <thead class="price__header">
+            <tr class="price__row">
+              <th class="price__column"></th>
+
+              <th class="price__column">
+                <span class="price__type">Стандарт</span>
+                <span class="price__total">3,99 usd</span>
+              </th>
+
+              <th class="price__column  price__column--hit">
+                <span class="price__type">Стандарт</span>
+                <span class="price__total">3,99 usd</span>
+              </th>
+
+              <th class="price__column">
+                <span class="price__type">Стандарт</span>
+                <span class="price__total">3,99 usd</span>
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="price__body">
+            <tr class="price__row">
+              <td class="price__column">
+                <span class="price__option">Розовый фильтр</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--yes">Розовый фильтр</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--yes">Розовый фильтр</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--yes">Розовый фильтр</span>
+              </td>
+            </tr>
+
+            <tr class="price__row">
+              <td class="price__column">
+                <span class="price__option">Смайлики</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--yes">Смайлики</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--yes">Смайлики</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--yes">Смайлики</span>
+              </td>
+            </tr>
+
+            <tr class="price__row">
+              <td class="price__column">
+                <span class="price__option">Комментарии</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--no">Комментарии</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--no">Комментарии</span>
+              </td>
+
+              <td class="price__column">
+                <span class="price__option price__option--no">Комментарии</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div> <!-- end .price__wrapper -->
+
+      <div class="price__toggles">
+        <button class="price__toggle" type="button">1</button>
+        <button class="price__toggle" type="button">2</button>
+        <button class="price__toggle" type="button">3</button>
+      </div> <!-- end review__toggles.slider__toggles -->
+    </section> <!-- end .price -->
+
+    <section class="our-contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+
+      <div class="our-contacts__wrapper">
+        <p class="our-contacts__title">Остались вопросы? Свяжитесь с нами!</p>
+
+        <ul class="our-contacts__list">
+          <li class="our-contacts__item">
+            <span class="our-contacts__name">Звоните:</span>
+            <a href="tel:+78125556666" class="our-contacts__value">+7 (812) 555-66-66</a>
+          </li>
+
+          <li class="our-contacts__item">
+            <span class="our-contacts__name">Пишите:</span>
+            <a href="mailto:mail@htmlacademy.ru" class="our-contacts__value">mail@htmlacademy.ru</a>
+          </li>
+
+          <li class="our-contacts__item">
+            <span class="our-contacts__name">Приезжайте в гости:</span>
+            <address class="our-contacts__value">ул. Большая Конюшенная, 19/8</address>
+          </li>
+        </ul>
+      </div> <!-- end .our-contacts__wrapper -->
+
+      <div class="our-contacts__map"></div> <!-- end .our-contacts__map -->
+    </section> <!-- end .our-contacts -->
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo">
+        <img class="page-footer__logo-image" src="https://placehold.it/147x40" width="147" height="40" alt="Логотип приложения &laquo;Pink&raquo;">
+      </a>
+
+      <ul class="social">
+        <li class="social__item social__item--tw"><a href="#" target="_blank" rel="noreferrer nofollow">Twitter</a></li>
+        <li class="social__item social__item--fb"><a href="#" target="_blank" rel="noreferrer nofollow">Facebook</a></li>
+        <li class="social__item social__item--yt"><a href="#" target="_blank" rel="noreferrer nofollow">Youtube</a></li>
+      </ul>
+
+      <p class="page-footer__developed-by">
+        Разработано
+        <a class="page-footer__developed-by-link" href="#" rel="noreferrer nofollow" target="_blank">
+          <img class="page-footer__developed-by-image" src="https://placehold.it/27x34" width="27" height="34" alt="Логотип &laquo;HTML Academy&raquo;">
+        </a>
+      </p>
+    </div> <!-- end page-footer__wrapper -->
+  </footer>
 
   </body>
 </html>
